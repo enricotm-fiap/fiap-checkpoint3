@@ -1,40 +1,8 @@
-# MVC RH
+### Rodar docker em profile "dev"
+``` docker run -d -p 8080:8080 -e PROFILE=dev enricotmfiap/fiap-checkpoint2 ```
 
-Aplicação MVC de Recursos Humanos para fins didáticos
+### Rodar docker em profile "stg"
+``` docker run -d -p 8080:8080 -e PROFILE=stg enricotmfiap/fiap-checkpoint2 ```
 
-## Setup e Uso
-
-### Execução / Local dev
-
-#### Terminal
-
-```sh
-./mvnw spring-boot:run -Dspring-boot.run.profiles=dev
-```
-
-#### [H2 Web UI](http://localhost:8080/h2-console)
-
-> - *url*: jdbc:h2:mem:testdb
-> - *usuário*: sa
-> - *senha*: password
-
-![](assets/images/h2-console.png)
-
-## Arquitetura
-
-### MER
-
-![](assets/docs/src/mer/mer.svg)
-
-## Java
-
-> [Spring Initializr](https://start.spring.io/) - Criar aplicação conforme a configuração 
-
-### Spring Boot - Configuração
-
-![](assets/images/spring.png)
-
-## Referencias
-
- - https://spring.io/projects/spring-framework
- - https://plantuml.com/
+### Rodar docker em profile "prd"
+``` docker run -d -p 8080:8080 -e PROFILE=prd enricotmfiap/fiap-checkpoint2 ```

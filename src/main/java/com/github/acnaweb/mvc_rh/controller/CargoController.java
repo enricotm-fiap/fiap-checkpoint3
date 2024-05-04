@@ -13,6 +13,11 @@ public class CargoController {
 		return "cargo/list";
 	}
 	
+	@GetMapping("funcionarios")
+	public String funcionariosByCargo() {
+		return "cargo/list_funcionarios";
+	}
+	
 	@GetMapping("form")
 	public String form() {
 		return "cargo/form";
